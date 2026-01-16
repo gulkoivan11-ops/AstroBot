@@ -44,4 +44,5 @@ def handle_message(message):
         print(f"Помилка: {e}")
         bot.send_message(message.chat.id,'Ошибка. Убедись, что введен правильный формат (например: "5 кадров по 30 секунд" / "10 кадров по 3 минуты"')
 
-bot.polling()
+bot.infinity_polling()
+
