@@ -10,7 +10,7 @@ def nice_format(num):
     else:
         return round(num, 2)
 
-values = {'секунд': 1, 'секунды': 1, 'сек': 1,'минут': 60, 'минуты': 60, 'мин': 60,'часов': 3600, 'часы': 3600, 'час': 3600}
+values = {'секунд': 1, 'секунды': 1, 'сек': 1,'минут': 60, 'минуты': 60, 'мин': 60,'часов': 3600, 'часы': 3600, 'часа': 3600, 'час':3600}
 def convert_units(value, time, secvalue):
     global values
     if secvalue in values:
@@ -45,4 +45,5 @@ def handle_message(message):
         bot.send_message(message.chat.id,'Ошибка. Убедись, что введен правильный формат (например: "5 кадров по 30 секунд" / "10 кадров по 3 минуты"')
 
 bot.infinity_polling()
+
 
